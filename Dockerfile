@@ -8,7 +8,8 @@ RUN \
     apt-get update && \
     apt-get install npm nodejs git -y && \
     npm install -g grunt-cli && \
-	npm install -g nrm
+	npm install -g nrm && \
+	rm -rf /var/lib/apt/lits/*
 
 RUN ln -s "$(which nodejs)" /usr/bin/node
 
