@@ -8,7 +8,7 @@ RUN \
     apt-get update && \
     apt-get install curl -y && \
 	curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - && \
-	apt-get install npm nodejs git build-essential -y && \ 
+	apt-get install nodejs git npm build-essential -y && \ 
     npm install -g grunt-cli && \
 	npm install -g nrm && \
 	rm -rf /var/lib/apt/lits/*
