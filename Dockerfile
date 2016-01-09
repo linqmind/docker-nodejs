@@ -6,7 +6,9 @@ ENV REFRESHED_AT 2015-09-06 15:48
 
 RUN \
     apt-get update && \
-    apt-get install npm nodejs git -y && \
+    apt-get install curl -y && \
+	curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - && \
+	apt-get install npm nodejs git build-essential -y && \ 
     npm install -g grunt-cli && \
 	npm install -g nrm && \
 	rm -rf /var/lib/apt/lits/*
