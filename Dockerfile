@@ -10,7 +10,7 @@ RUN \
     apt-get update && \                                                                                           
     apt-get install git curl wget -y && \                                                                         
     curl -sL https://deb.nodesource.com/setup_5.x | bash - && \                                                   
-    apt-get install npm nodejs  -y && \                                                                           
+    apt-get install nodejs  -y && \                                                                           
     npm install -g grunt-cli && \                                                                                 
     npm install -g nrm && \                                                                                       
     rm -rf /var/lib/apt/lits/*
