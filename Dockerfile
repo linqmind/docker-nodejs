@@ -5,6 +5,7 @@ MAINTAINER DavidZhao <zhaohaibin@outlook.com>
 ENV REFRESHED_AT 2015-09-06 15:48
 
 RUN \
+    curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     apt-get update && \
     apt-get install npm nodejs git -y && \
     npm install -g grunt-cli && \
