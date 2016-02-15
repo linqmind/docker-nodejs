@@ -4,6 +4,8 @@ MAINTAINER DavidZhao <zhaohaibin@outlook.com>
 
 ENV REFRESHED_AT 2016-02-15 15:48
 
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
 RUN \
     curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     apt-get update && \
