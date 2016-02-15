@@ -7,9 +7,10 @@ ENV REFRESHED_AT 2016-02-15 15:48
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN \
-    curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
     apt-get update && \
-    apt-get install npm nodejs git -y && \
+    apt-get install git curl wget -y && \
+    curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
+    apt-get install npm nodejs  -y && \
     npm install -g grunt-cli && \
 	npm install -g nrm && \
 	rm -rf /var/lib/apt/lits/*
