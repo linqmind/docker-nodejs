@@ -2,7 +2,7 @@ FROM cloudcube/base
 
 MAINTAINER DavidZhao <zhaohaibin@outlook.com>
 
-ENV REFRESHED_AT 2015-09-06 15:48
+ENV REFRESHED_AT 2016-02-15 15:48
 
 RUN \
     curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
