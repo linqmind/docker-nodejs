@@ -15,7 +15,7 @@ RUN \
     npm install -g nrm && \                                                                                       
     rm -rf /var/lib/apt/lits/*
 
-RUN ln -s "$(which nodejs)" /usr/bin/node
+# RUN ln -s "$(which nodejs)" /usr/bin/node
 
 RUN echo "export LC_ALL=C" >> /root/.bashrc
 
